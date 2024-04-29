@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JIT-1</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="send_button_text">Send</string>
+    <string name="enter_email_address_message">Please enter an email address</string>
+    <string name="verification_code_sent_message">Verification code sent to %1$s</string>
+    <string name="failed_to_send_verification_code_message">Failed to send verification code. Please try again later.</string>
+</resources>
