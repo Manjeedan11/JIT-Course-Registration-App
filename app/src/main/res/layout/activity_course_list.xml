@@ -1,0 +1,325 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#161517"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp">
+
+            <ImageView
+                android:layout_width="62dp"
+                android:id="@+id/account_image"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/baseline_account_circle_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select a Course"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:id="@+id/selectCourse"/>
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/search_border"
+                android:drawableEnd="@drawable/search_logo"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical|end"
+                android:hint="Search course"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:padding="14dp">
+
+
+        <!-- Card 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:id="@+id/businessCard"
+            android:layout_height="165dp"
+            android:layout_columnWeight="1"
+            android:elevation="6dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Business"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:id="@+id/marketingCard"
+            android:layout_height="165dp"
+            android:layout_columnWeight="1"
+            android:elevation="6dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Marketing"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:id="@+id/tourismCard"
+            android:layout_height="165dp"
+            android:layout_columnWeight="1"
+            android:elevation="6dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Tourism"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:id="@+id/accountingCard"
+                android:layout_height="165dp"
+                android:layout_columnWeight="1"
+                android:elevation="6dp"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Accounting"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="3dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:id="@+id/sofwareCard"
+                android:layout_height="165dp"
+                android:layout_columnWeight="1"
+                android:elevation="6dp"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Software Engineering"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="3dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:id="@+id/fashionCard"
+                android:layout_height="165dp"
+                android:layout_columnWeight="1"
+                android:elevation="6dp"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Fashion Design"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="3dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:id="@+id/lawCard"
+                android:layout_height="165dp"
+                android:layout_columnWeight="1"
+                android:elevation="6dp"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Law"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="3dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:id="@+id/architectureCard"
+                android:layout_height="165dp"
+                android:layout_columnWeight="1"
+                android:elevation="6dp"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Architecture"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="3dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+</LinearLayout>
+
+    </ScrollView>
