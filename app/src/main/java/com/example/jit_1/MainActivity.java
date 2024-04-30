@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
         String verificationCode = generateVerificationCode();
 
 
-        final String senderEmail = "smcode011@gmail.com";
-        final String senderPassword = "Srimanjeedan11";
+        final String senderEmail = "examplemail@gmail.com";
+        final String senderPassword = "*****";
 
 
         Properties properties = new Properties();
